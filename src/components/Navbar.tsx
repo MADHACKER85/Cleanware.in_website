@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2 hover-scale">
-            <img src="https://github.com/MADHACKER85/cleanware_logos/blob/fba926ff335687f06e84b5d921bc453d3da1f1f6/cleanware%20logo%20only.png" alt="Cleanware.in Logo" className="h-8 w-auto" />
+            <img src="https://res.cloudinary.com/de1acoevv/image/upload/v1740213842/cleanware_logo_only_yvmskx.png" alt="Cleanware.in Logo" className="h-8 w-auto" />
             <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
   <span className="text-xl font-bold bg-gradient-to-r from-red-500 to-purple-500 bg-clip-text text-transparent">
     Cleanware.in

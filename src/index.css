@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+  }
+  50% {
+    text-shadow: 0 0 20px #7000ff, 0 0 30px #7000ff, 0 0 40px #7000ff;
+  }
+}
+
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: #ff0080;
+    box-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+  }
+  50% {
+    border-color: #7000ff;
+    box-shadow: 0 0 20px #7000ff, 0 0 30px #7000ff;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-border-glow {
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  background: rgba(13, 12, 17, 0.8);
+  border: 1px solid rgba(255, 0, 128, 0.2);
+}
+
+.cyber-border {
+  position: relative;
+  border: 1px solid rgba(255, 0, 128, 0.3);
+}
+
+.cyber-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ff0080, #7000ff);
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.5;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+}
+
+.cyber-gradient {
+  background: linear-gradient(135deg, #0d0c11 0%, #1a1a2e 100%);
+}

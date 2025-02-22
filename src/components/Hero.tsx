@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-in">
               <div className="flex justify-center lg:justify-start mb-12">
-                <img src="https://github.com/MADHACKER85/cleanware_logos/blob/fba926ff335687f06e84b5d921bc453d3da1f1f6/cleanware%20logo%20only.png" alt="Cleanware.in Logo" className="h-120 w-auto animate-float" />
+                <img src="https://res.cloudinary.com/de1acoevv/image/upload/v1740213842/cleanware_logo_only_yvmskx.png" alt="Cleanware.in Logo" className="h-120 w-auto animate-float" />
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Cleanware
